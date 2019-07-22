@@ -5,6 +5,6 @@ The stages this application will be built in are as follows:
 
 SVG designed in Adobe
 
-Main controll functionality added 
+Main control functionality added 
 
 

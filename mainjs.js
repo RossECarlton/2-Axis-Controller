@@ -56,6 +56,52 @@ window.onload = function (){
 
 
 
+
+
+
+     function lrlight(){
+     
+        let rbtn = document.getElementById("left-r-btn");
+         rbtn.setAttribute("fill","#F6CCA0");
+         
+     }
+     
+     function lrunlight(){
+     
+        let lrbtn = document.getElementById("left-r-btn");
+         lrbtn.setAttribute("fill","#EA8922");
+         
+     }
+
+
+     
+     function plight(){
+     
+        let rbtn = document.getElementById("powersldr");
+         rbtn.setAttribute("fill","#F6CCA0");
+         
+     }
+     
+     function punlight(){
+     
+        let lrbtn = document.getElementById("powersldr");
+         lrbtn.setAttribute("fill","#EA8922");
+         
+     }
+
+
+
+
+
+
+
+
+
+     var lrbtnlight = document.getElementById("left-r-btn");
+     var pwrbtnlight = document.getElementById("powersldr");
+
+
+
     var obtnlight = document.getElementById("open");
     var rbtnlight = document.getElementById("releaseb");  
     var setbtnlight = document.getElementById("setbutton"); 
@@ -64,9 +110,15 @@ window.onload = function (){
      document.addEventListener("mouseup",unlightsetbtn);
 
      rbtnlight.addEventListener("mousedown",rhighlight);
-     rbtnlight.addEventListener("mouseup",runlight);
+     document.addEventListener("mouseup",runlight);
 
      obtnlight.addEventListener("mousedown",olight);
-     obtnlight.addEventListener("mouseup",ounlight);
+     document.addEventListener("mouseup",ounlight);
+
+     lrbtnlight.addEventListener("mousedown",lrlight);
+     document.addEventListener("mouseup",lrunlight);
+
+     pwrbtnlight.addEventListener("mousedown",plight);
+     document.addEventListener("mouseup",punlight);
 
 }

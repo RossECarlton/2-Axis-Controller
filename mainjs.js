@@ -98,7 +98,7 @@ window.onload = function (){
 
 
      var lrbtn = document.getElementById("left-r-btn");
-     var pwrbtnlight = document.getElementById("powersldr");
+     var pwrbtn = document.getElementById("powersldr");
 
 
 
@@ -118,7 +118,7 @@ window.onload = function (){
      lrbtn.addEventListener("mousedown",lrlight);
      document.addEventListener("mouseup",lrunlight);
 
-     pwrbtnlight.addEventListener("mousedown",plight);
+     pwrbtn.addEventListener("mousedown",plight);
      document.addEventListener("mouseup",punlight);
 
 
@@ -135,7 +135,7 @@ window.onload = function (){
         if (svgbtnrl4.getAttribute("fill")== "#F6CCA0"){
             var WinW = window.innerWidth;
             scaleFactor = 1200/WinW;
-            var y = event.clientY;
+            var y = event.clientX;
             var M = y * scaleFactor;
             
             if (M < 270 ){
@@ -152,6 +152,32 @@ window.onload = function (){
     
     }
 
+
     lrbtn.addEventListener("mousemove", leftrightdrag);
+
+
+
+    function powerButtonMove (event){
+        
+    
+        if (pwrbtn.getAttribute("fill")== "#F6CCA0"){
+            var WinH = window.innerHeight;
+            scaleFactor = 1820/WinH;
+            var y = event.clientY;
+            var M = y * scaleFactor;
+            
+            if (M > 1350){
+                M = 1350;
+            }
+            if (M < 850){
+                M = 850;
+            }
+            pwrbtn.setAttribute("d", "M981,"+(M)+"c0,5.5-4.5,10-10,10h-59c-5.5,0-10-4.5-10-10v-60c0-5.5,4.5-10,10-10h59c5.5,0,10,4.5,10,10V1097z");
+           
 }
+    }
+
+pwrbtn.addEventListener("mousemove", powerButtonMove);
+
+    }
 

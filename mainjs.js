@@ -1,6 +1,12 @@
 window.onload = function (){
 
 
+
+    
+
+ 
+
+
     function highlight(){
      
         let setbtn = document.getElementById("setbutton");
@@ -134,7 +140,7 @@ window.onload = function (){
     
         if (svgbtnrl4.getAttribute("fill")== "#F6CCA0"){
             var WinW = window.innerWidth;
-            scaleFactor = 1200/WinW;
+            scaleFactor = 1400/WinW;
             var y = event.clientX;
             var M = y * scaleFactor;
             

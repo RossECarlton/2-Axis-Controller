@@ -141,8 +141,8 @@ window.onload = function (){
         if (svgbtnrl4.getAttribute("fill")== "#F6CCA0"){
             var WinW = window.innerWidth;
             scaleFactor = 1400/WinW;
-            var y = event.clientX;
-            var M = y * scaleFactor;
+            var x = event.clientX;
+            var M = x * scaleFactor;
             
             if (M < 270 ){
                 M = 270;
@@ -150,7 +150,7 @@ window.onload = function (){
             if (M > 950 ){
                 M = 950;
             }
-
+            document.getElementById("showTurn").textContent = Math.round(M);
             lrbtn.setAttribute("d", "M"+(M- 35)+",1567c0,8.25-6.75,15-15,15h-51c-8.25,0-15-6.75-15-15v-50c0-8.25,6.75-15,15-15h51c8.25,0,15,6.75,15,15V1567z");
             }
 
@@ -178,8 +178,10 @@ window.onload = function (){
             if (M < 850){
                 M = 850;
             }
+            
             pwrbtn.setAttribute("d", "M981,"+(M)+"c0,5.5-4.5,10-10,10h-59c-5.5,0-10-4.5-10-10v-60c0-5.5,4.5-10,10-10h59c5.5,0,10,4.5,10,10V1097z");
-           
+            document.getElementById("showPower").textContent = Math.round(M);
+ 
 }
     }
 

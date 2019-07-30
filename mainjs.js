@@ -108,9 +108,9 @@ window.onload = function (){
 
 
 
-    var obtnlight = document.getElementById("open");
-    var rbtnlight = document.getElementById("releaseb");  
-    var setbtnlight = document.getElementById("setbutton"); 
+    var obtnlight = document.getElementById("openn");
+    var rbtnlight = document.getElementById("releasebb");  
+    var setbtnlight = document.getElementById("setbuttonn"); 
 
      setbtnlight.addEventListener("mousedown",highlight);
      document.addEventListener("mouseup",unlightsetbtn);
@@ -170,7 +170,7 @@ window.onload = function (){
             var WinH = window.innerHeight;
             scaleFactor = 3000/WinH;
             var y = event.clientY;
-            var M = y * scaleFactor;
+            let M = y * scaleFactor;
             
             if (M > 1350){
                 M = 1350;
@@ -186,4 +186,10 @@ window.onload = function (){
 document.addEventListener("mousemove", powerButtonMove);
 
     }
+
+
+
+
+
+
 

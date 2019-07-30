@@ -159,7 +159,7 @@ window.onload = function (){
     }
 
 
-    lrbtn.addEventListener("mousemove", leftrightdrag);
+    document.addEventListener("mousemove", leftrightdrag);
 
 
 
@@ -168,7 +168,7 @@ window.onload = function (){
     
         if (pwrbtn.getAttribute("fill")== "#F6CCA0"){
             var WinH = window.innerHeight;
-            scaleFactor = 1820/WinH;
+            scaleFactor = 3000/WinH;
             var y = event.clientY;
             var M = y * scaleFactor;
             
@@ -183,7 +183,7 @@ window.onload = function (){
 }
     }
 
-pwrbtn.addEventListener("mousemove", powerButtonMove);
+document.addEventListener("mousemove", powerButtonMove);
 
     }
 

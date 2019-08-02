@@ -49,8 +49,24 @@ window.onload = function (){
      
         let rbtn = document.getElementById("open");
          rbtn.setAttribute("fill","#868686");
+
+
+
+         if (document.getElementById("openCloseText").textContent === "Close" )
+        {
+           document.getElementById("openCloseText").textContent = "Open";
+          
+        }
+         
+        else {
+          document.getElementById("openCloseText").textContent = "Close";
+        }
          
      }
+
+
+
+
      
      function ounlight(){
      
@@ -98,7 +114,7 @@ window.onload = function (){
 
 
 
-
+     
 
 
 
@@ -127,9 +143,10 @@ window.onload = function (){
      pwrbtn.addEventListener("mousedown",plight);
      document.addEventListener("mouseup",punlight);
 
-
-
-
+    
+ 
+        
+             
 
 
      

@@ -3,21 +3,22 @@ window.onload = function (){
 
 
     
-
+var highlightbtnColor = "#868686";
+var unlightbtnColor = "#606060";
  
 
 
     function highlight(){
      
         let setbtn = document.getElementById("setbutton");
-         setbtn.setAttribute("fill","#868686");
+         setbtn.setAttribute("fill",highlightbtnColor);
          
      }
 
      function unlightsetbtn(){
      
         let setbtn = document.getElementById("setbutton");
-         setbtn.setAttribute("fill","#606060");
+         setbtn.setAttribute("fill",unlightbtnColor);
          
      }
 
@@ -27,14 +28,14 @@ window.onload = function (){
     function rhighlight(){
      
         let rbtn = document.getElementById("releaseb");
-         rbtn.setAttribute("fill","#868686");
+         rbtn.setAttribute("fill",highlightbtnColor);
          
      }
      
      function runlight(){
      
         let rbtn = document.getElementById("releaseb");
-         rbtn.setAttribute("fill","#606060");
+         rbtn.setAttribute("fill",unlightbtnColor);
          
      }
 
@@ -48,7 +49,7 @@ window.onload = function (){
      function olight(){
      
         let rbtn = document.getElementById("open");
-         rbtn.setAttribute("fill","#868686");
+         rbtn.setAttribute("fill",highlightbtnColor);
 
 
 
@@ -71,7 +72,7 @@ window.onload = function (){
      function ounlight(){
      
         let obtn = document.getElementById("open");
-         obtn.setAttribute("fill","#606060");
+         obtn.setAttribute("fill",unlightbtnColor);
          
      }
 

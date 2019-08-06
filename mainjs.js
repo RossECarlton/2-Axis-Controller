@@ -78,21 +78,21 @@ var unlightbtnColor = "#606060";
 
 
 
-
-
+var dragbtnLColor = "#F6CCA0";
+var dragbtnuLColor = "#EA8922";
 
 
      function lrlight(){
      
         let rbtn = document.getElementById("left-r-btn");
-         rbtn.setAttribute("fill","#F6CCA0");
+         rbtn.setAttribute("fill",dragbtnLColor);
          
      }
      
      function lrunlight(){
      
         let lrbtn = document.getElementById("left-r-btn");
-         lrbtn.setAttribute("fill","#EA8922");
+         lrbtn.setAttribute("fill",dragbtnuLColor);
          
      }
 
@@ -101,14 +101,14 @@ var unlightbtnColor = "#606060";
      function plight(){
      
         let rbtn = document.getElementById("powersldr");
-         rbtn.setAttribute("fill","#F6CCA0");
+         rbtn.setAttribute("fill",dragbtnLColor);
          
      }
      
      function punlight(){
      
         let lrbtn = document.getElementById("powersldr");
-         lrbtn.setAttribute("fill","#EA8922");
+         lrbtn.setAttribute("fill",dragbtnuLColor);
          
      }
 

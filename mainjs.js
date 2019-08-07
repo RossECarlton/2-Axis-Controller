@@ -8,14 +8,14 @@ var unlightbtnColor = "#606060";
  
 
 
-    function highlight(){
+    var highlight = () => {
      
         let setbtn = document.getElementById("setbutton");
          setbtn.setAttribute("fill",highlightbtnColor);
          
      }
 
-     function unlightsetbtn(){
+     var unlightsetbtn = () => {
      
         let setbtn = document.getElementById("setbutton");
          setbtn.setAttribute("fill",unlightbtnColor);
@@ -25,14 +25,14 @@ var unlightbtnColor = "#606060";
 
 
      
-    function rhighlight(){
+    var  rhighlight = () => {
      
         let rbtn = document.getElementById("releaseb");
          rbtn.setAttribute("fill",highlightbtnColor);
          
      }
      
-     function runlight(){
+     var runlight = () =>{
      
         let rbtn = document.getElementById("releaseb");
          rbtn.setAttribute("fill",unlightbtnColor);
@@ -46,7 +46,7 @@ var unlightbtnColor = "#606060";
 
 
 
-     function olight(){
+     var olight = () => {
      
         let rbtn = document.getElementById("open");
          rbtn.setAttribute("fill",highlightbtnColor);
@@ -69,7 +69,7 @@ var unlightbtnColor = "#606060";
 
 
      
-     function ounlight(){
+     var ounlight = () =>{
      
         let obtn = document.getElementById("open");
          obtn.setAttribute("fill",unlightbtnColor);
@@ -82,14 +82,14 @@ var dragbtnLColor = "#F6CCA0";
 var dragbtnuLColor = "#EA8922";
 
 
-     function lrlight(){
+     var lrlight = () =>{
      
         let rbtn = document.getElementById("left-r-btn");
          rbtn.setAttribute("fill",dragbtnLColor);
          
      }
      
-     function lrunlight(){
+     var lrunlight = () =>{
      
         let lrbtn = document.getElementById("left-r-btn");
          lrbtn.setAttribute("fill",dragbtnuLColor);
@@ -98,14 +98,14 @@ var dragbtnuLColor = "#EA8922";
 
 
      
-     function plight(){
+     var plight = () =>{
      
         let rbtn = document.getElementById("powersldr");
          rbtn.setAttribute("fill",dragbtnLColor);
          
      }
      
-     function punlight(){
+     var  punlight = () =>{
      
         let lrbtn = document.getElementById("powersldr");
          lrbtn.setAttribute("fill",dragbtnuLColor);
@@ -153,7 +153,7 @@ var dragbtnuLColor = "#EA8922";
      
      // animate left right turn button 
 
-     function leftrightdrag (event){
+     var leftrightdrag  = (event) =>{
         let svgbtnrl4 = document.getElementById("left-r-btn");
     
         if (svgbtnrl4.getAttribute("fill")== "#F6CCA0"){
@@ -181,7 +181,7 @@ var dragbtnuLColor = "#EA8922";
 
 
 
-    function powerButtonMove (event){
+    var  powerButtonMove = (event) =>{
         
     
         if (pwrbtn.getAttribute("fill")== "#F6CCA0"){

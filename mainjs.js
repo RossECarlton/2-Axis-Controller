@@ -3,8 +3,8 @@ window.onload = function (){
 
 
     
-var highlightbtnColor = "#868686";
-var unlightbtnColor = "#606060";
+    const highlightbtnColor = "#868686";
+    const unlightbtnColor = "#606060";
  
 
 
@@ -78,8 +78,8 @@ var unlightbtnColor = "#606060";
 
 
 
-var dragbtnLColor = "#F6CCA0";
-var dragbtnuLColor = "#EA8922";
+     const dragbtnLColor = "#F6CCA0";
+     const dragbtnuLColor = "#EA8922";
 
 
      var lrlight = () =>{
@@ -125,9 +125,9 @@ var dragbtnuLColor = "#EA8922";
 
 
 
-    var obtnlight = document.getElementById("openn");
-    var rbtnlight = document.getElementById("releasebb");  
-    var setbtnlight = document.getElementById("setbuttonn"); 
+     var obtnlight = document.getElementById("openn");
+     var rbtnlight = document.getElementById("releasebb");  
+     var setbtnlight = document.getElementById("setbuttonn"); 
 
      setbtnlight.addEventListener("mousedown",highlight);
      document.addEventListener("mouseup",unlightsetbtn);
@@ -181,7 +181,7 @@ var dragbtnuLColor = "#EA8922";
 
 
 
-    var  powerButtonMove = (event) =>{
+     var  powerButtonMove = (event) =>{
         
     
         if (pwrbtn.getAttribute("fill")== "#F6CCA0"){
@@ -200,10 +200,10 @@ var dragbtnuLColor = "#EA8922";
             pwrbtn.setAttribute("d", "M981,"+(M)+"c0,5.5-4.5,10-10,10h-59c-5.5,0-10-4.5-10-10v-60c0-5.5,4.5-10,10-10h59c5.5,0,10,4.5,10,10V1097z");
             document.getElementById("showPower").textContent = Math.round(M);
  
-}
-    }
+        }
+        }
 
-document.addEventListener("mousemove", powerButtonMove);
+    document.addEventListener("mousemove", powerButtonMove);
 
     }
 

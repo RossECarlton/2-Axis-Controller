@@ -1,4 +1,4 @@
-window.onload = function (){
+var window,onload =  () => {
 
 
 
@@ -69,7 +69,7 @@ window.onload = function (){
 
 
      
-     var ounlight = () =>{
+     var ounlight = () => {
      
         let obtn = document.getElementById("open");
          obtn.setAttribute("fill",unlightbtnColor);
@@ -82,7 +82,7 @@ window.onload = function (){
      const dragbtnuLColor = "#EA8922";
 
 
-     var lrlight = () =>{
+     var lrlight = () => {
      
         let rbtn = document.getElementById("left-r-btn");
          rbtn.setAttribute("fill",dragbtnLColor);
@@ -98,7 +98,7 @@ window.onload = function (){
 
 
      
-     var plight = () =>{
+     var plight = () => {
      
         let rbtn = document.getElementById("powersldr");
          rbtn.setAttribute("fill",dragbtnLColor);
@@ -113,6 +113,20 @@ window.onload = function (){
      }
 
 
+     var dlight = () => {
+     
+        let rbtn = document.getElementById("distanceSlideBtn");
+         rbtn.setAttribute("fill",dragbtnLColor);
+         
+     }
+     
+     var  dunlight = () =>{
+     
+        let lrbtn = document.getElementById("distanceSlideBtn");
+         lrbtn.setAttribute("fill",dragbtnuLColor);
+         
+     }
+
 
 
      
@@ -122,7 +136,7 @@ window.onload = function (){
 
      var lrbtn = document.getElementById("left-r-btn");
      var pwrbtn = document.getElementById("powersldr");
-
+     var disbtn = document.getElementById("distanceSlideBtn");
 
 
      var obtnlight = document.getElementById("openn");
@@ -144,6 +158,8 @@ window.onload = function (){
      pwrbtn.addEventListener("mousedown",plight);
      document.addEventListener("mouseup",punlight);
 
+     disbtn.addEventListener("mousedown",dlight);
+     document.addEventListener("mouseup",dunlight);
     
  
         
@@ -152,6 +168,8 @@ window.onload = function (){
 
      
      // animate left right turn button 
+
+
 
      var leftrightdrag  = (event) =>{
         let svgbtnrl4 = document.getElementById("left-r-btn");
@@ -181,7 +199,7 @@ window.onload = function (){
 
 
 
-     var  powerButtonMove = (event) =>{
+    var  powerButtonMove = (event) =>{
         
     
         if (pwrbtn.getAttribute("fill")== "#F6CCA0"){
@@ -211,5 +229,29 @@ window.onload = function (){
 
 
 
+    var distancedrag  = (event) => {
+        let svgbtnrl3 = document.getElementById("distanceSlideBtn");
+    
+        if (svgbtnrl3.getAttribute("fill") == "#F6CCA0"){
+            var WinW = window.innerWidth;
+            scaleFactor = 1400/WinW;
+            var x = event.clientX;
+            var M = x * scaleFactor;
+            
+            if (M < 150 ){
+                M = 150;
+            }
+            if (M > 1050 ){
+                M = 1050;
+            }
+          //  document.getElementById("showTurn").textContent = Math.round(M);
+            svgbtnrl3.setAttribute("d", "M" + (M) + ",1915c0,8.25-6.75,15-15,15h-51c-8.25,0-15-6.75-15-15v-50c0-8.25,6.75-15,15-15h51 c8.25,0,15,6.75,15,15V1567z" );
+            }
 
+           
+    
+    }
+
+
+    document.addEventListener("mousemove", distancedrag);
 
